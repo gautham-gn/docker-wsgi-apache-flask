@@ -1,5 +1,4 @@
-**Containerizing Python Flask Application into Docker** 
-Nagendra Gautham Gondi
+**Containerizing Python Flask Application into Docker**   
 
 Application:
 
