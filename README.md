@@ -1,9 +1,9 @@
-**Project-1 | Cloud Computing** 
+**Containerizing Python Flask Application into Docker** 
 Nagendra Gautham Gondi
 
 Application:
 
-The assignment is on containerizing the RESTful Web Services we implemented in HW2 and HW3. This can be acheieved by using Docker which is lightweighted Linux System and host the applications much easier.  
+The task is on containerizing the RESTful Web Services we implemented in HW2 and HW3. This can be acheieved by using Docker which is lightweighted Linux System and host the applications much easier.  
 I have used flask framework with Python to create a REST API to host weather information.  
 The data used is weather information of Cincinnati for the last 3 years. The attributes are  
 DATE in YYYYMMDD format,  
@@ -63,8 +63,6 @@ https://ianlondon.github.io/blog/deploy-flask-docker-nginx/
 
 ------------------------------------------------------------------------------------------   
   
-**Application :** http://localhost  
-**Github      :** https://github.uc.edu/gondinm/Cloud_Computing/tree/master/Project-1  
-**Readme:** https://github.uc.edu/gondinm/Cloud_Computing/blob/master/Project-1/README.md  
+**Readme:** https://github.com/gautham-gn/docker-wsgi-apache-flask/edit/master/README.md
   
 ------------------------------------------------------------------------------------------  
