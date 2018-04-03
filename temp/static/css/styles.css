@@ -1,0 +1,120 @@
+body,html {
+	height: 100%;
+}
+
+@media (max-width: 768px) {
+    #header {
+        text-align: center;
+    }
+}
+
+/* Navigation Bar */
+.navbar {
+	background-color: #6d7172;
+	border-bottom: 1px solid #000;
+	font-family: 'Mina', sans-serif;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+    font-size: 30px;
+}
+
+.navbar .navbar-brand:hover {
+    color: #000;
+}
+
+.navbar .navbar-nav .nav-link {
+	color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+	color: #000;
+}
+
+/* Header */
+#header {
+    background: url(../images/cincy.png) center center no-repeat;
+    background-size: cover;
+	height: 100%;
+	color: black;
+	display: flex;
+	align-items: center;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 20px;
+}
+
+#header img {
+    padding: 0 0 20px 0;
+    width: 80%;
+}
+
+#header .container-forms {
+    background-color: rgba(0,0,0,0.6);
+    padding: 30px;
+    border-radius: 10px;
+    color: aqua;
+}
+
+#header .header-middle {
+    font-family: 'Itim', cursive;
+    color: #fff;
+}
+
+#header .header-right {
+    font-size: 25px;
+    padding: 10px;
+}
+
+#header .col-md-3 #datepicker {
+    color: #000;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+#header .fa-chevron-down {
+    color: aqua;
+}
+
+#header .fa-chevron-down:hover {
+    color: #83bfe2;
+}
+
+.datepicker-display {
+	align-items: center;
+}
+
+#header .col-md-3 .btn {
+    background-color: #1eb208;
+    color: #fff;    
+    width: 200px;
+    font-size: 22px;
+    font-weight: 900;
+    border-radius: 12px;
+}
+
+#header .col-md-3 .btn:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+/* SOCIAL */
+
+#social {
+    padding: 4.25rem 0;
+    background-color: #81827e;
+    border-top: 1px solid #000;
+}
+
+#social .fa-linkedin-in,.fa-facebook-f,.fa-instagram,.fa-twitter {
+    color: #be2835;
+    margin-top: 10px;
+}
+
+#social .social-connect-text {
+    font-family: 'Mina', sans-serif;
+    margin-top: 15px;
+}
+

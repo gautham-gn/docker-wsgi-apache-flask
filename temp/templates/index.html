@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/fontawesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Mina:400,700" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.js"> </script>
+      
+    <!-- DatePicker Related Styles and Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/gijgo@1.8.2/combined/js/gijgo.min.js" type="text/javascript"></script>
+    <script src="../static/js/Chart.min.js" type="text/javascript"> </script>
+    <script src="../static/js/script.js" type="text/javascript"> </script>
+    <link href="https://cdn.jsdelivr.net/npm/gijgo@1.8.2/combined/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Saira+Condensed:400,700" rel="stylesheet">
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+    <link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet">
+    <!-- End of DatePicker Related Styles and Scripts -->
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation-bar">
+        <span class="navbar-toggler-icon">&#9776;</span>
+      </button>
+
+      <a class= "navbar-brand" href="#"><img src="../static/images/cloud-img.png" class="img-fluid" style="width:50px;height:50px;"> Weather Report</a>     
+
+      <div class="collapse navbar-collapse" id="navigation-bar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class= "nav-link" href="#cincy">CINCINNATI</a></li>
+          <!--<li class="nav-item"><a class= "nav-link" href="#chicago">CHICAGO</a></li>
+          <li class="nav-item"><a class= "nav-link" href="#newyork">NEW YORK</a></li>
+          <li class="nav-item"><a class= "nav-link" href="#losangeles">LOS ANGELES</a></li>
+          <li class="nav-item"><a class= "nav-link" href="#delhi">DELHI</a></li> --> 
+        </ul>
+      </div>
+    </nav>
+      
+    <!-- HEADER -->
+    <section id="header">
+      <div class="container">
+        <div class="row container-forms">
+          <div class="col-md-6 header-left">  
+            <h1>Cincinnati Weather</h1>
+            <p>Choose any date to get temperatures for the next five days</p>
+          </div>
+
+          <div class="col-md-3 header-middle">
+              <!-- <h3>Cincinnati</h3> -->
+              <form>
+                <input id="datepicker" width="200" placeholder="Date" name="input_date"/>
+                <script>
+                  $('#datepicker').datepicker({
+                  uiLibrary: 'bootstrap4'
+                  });
+                </script> 
+                <p></p>
+                <button type="button" onclick="return checkWeather()" class="btn btn-outline-info btn-block">Check</button>
+              </form>
+          </div>
+          <div class="col-md-3 header-left">
+            <img src="../static/images/bearcats_copy.png" class="img-fluid" style="width:400px;height:180px;border-radius: 12px">
+          </div>
+            <div class="col-md-6 header-left" id="graphDisplay">
+                <canvas id="myChart" style="display: block"></canvas>
+            </div>
+            <div class="col-md-6 header-right">
+                <canvas id="myChart1" style="display: block"></canvas>
+            </div>
+        </div>
+         
+<!--
+        <div class="row">
+          <div class="col-md-12 text-center">
+              <a href="#chicago"><i class="fas fa-chevron-down fa-3x"></i></a>
+          </div>
+        </div>
+-->
+          
+      </div> 
+    </section>
+    <!--END OF HEADER -->
+    <!-- SOCIAL -->
+    
+    <section id ="social">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 social-connect-text">
+                    <h2>Connect with us:</h2>
+                    <hr align="left" width="95%">
+                </div>
+                
+                <div class="col-md-3">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/gauthamnagendra/"><i class="fab fa-linkedin-in fa-3x"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.facebook.com/gautham.gn"><i class="fab fa-facebook-f fa-3x"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/gautham_nagendra/"><i class="fab fa-instagram fa-3x"></i></a></li>
+                        <li class="list-inline-item"><a href="https://twitter.com/gauthamgn"><i class="fab fa-twitter fa-3x"></i></a></li>                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+      
+    </section>
+      
+    <!-- END OF SOCIAL -->
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
